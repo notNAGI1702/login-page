@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>ArborPortal - Forest Ecology</title>
+  </head>
+  <body
+    class="min-h-screen bg-cover bg-center bg-no-repeat bg-[url('/assets/Login_background.jpg')] flex flex-col font-sans antialiased text-slate-100"
+  >
+    <nav
+      class="w-full bg-[#0D1A63]/85 border-b border-[#1A2CA3]/40 backdrop-blur-md sticky top-0 z-50 px-4 md:px-8 py-4 flex items-center justify-between"
+    >
+      <a
+        href="#"
+        class="flex items-center space-x-3 text-decoration-none group"
+      >
+        <div
+          class="h-9 w-9 bg-[#F68048] rounded-xl flex items-center justify-center shadow-lg shadow-[#F68048]/20 transition-transform group-hover:scale-105"
+        >
+          <img
+            src="/assets/Tree Botany Shadow Icon.svg"
+            alt="ArborPortal Logo"
+            class="h-5 w-5 object-contain invert brightness-200"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'block';
+            "
+          />
+          <i class="fa-solid fa-tree text-white text-sm hidden"></i>
+        </div>
+        <span class="font-bold text-lg tracking-wide text-white">
+          Forests
+        </span>
+      </a>
+
+      <div class="hidden md:flex items-center space-x-1">
+        <a
+          href="#"
+          class="bg-[#2845D6] text-white font-medium px-4 py-2 rounded-xl text-sm transition-all shadow-md shadow-[#2845D6]/20"
+          >Top</a
+        >
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <div class="relative hidden sm:flex items-center">
+          <i
+            class="fa-solid fa-magnifying-glass absolute left-3.5 text-slate-400 text-xs"
+          ></i>
+          <input
+            type="text"
+            placeholder="Search ecosystem data..."
+            class="bg-[#0D1A63]/40 border border-[#1A2CA3]/40 rounded-xl py-2 pl-9 pr-4 text-sm text-white placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-[#F68048] focus:border-[#F68048] transition"
+          />
+        </div>
+
+        <button
+          id="logout-btn"
+          class="bg-red-500/10 hover:bg-red-500 border border-red-500/20 text-red-400 hover:text-white text-sm font-medium px-4 py-2 rounded-xl transition-all duration-200 active:scale-95"
+        >
+          <i class="fa-solid fa-arrow-right-from-bracket mr-2"></i>Log Out
+        </button>
+      </div>
+    </nav>
+
+    <main class="flex-1 max-w-5xl w-full mx-auto p-4 md:p-8 space-y-8">
+      <article
+        class="w-full bg-[#0D1A63]/85 border border-[#1A2CA3]/50 rounded-2xl p-6 md:p-8 shadow-2xl backdrop-blur-md space-y-6"
+      >
+        <header class="border-b border-[#1A2CA3]/30 pb-4">
+          <h1 class="text-3xl font-extrabold text-white tracking-tight">
+            What is a Forest?
+          </h1>
+          <p
+            class="text-[#F68048] text-sm font-semibold mt-1 uppercase tracking-wider"
+          >
+            Global Ecosystem Context
+          </p>
+        </header>
+
+        <div
+          class="space-y-4 text-slate-300 text-sm md:text-base leading-relaxed"
+        >
+          <p>
+            A forest is a piece of land with many trees. Forests are essential
+            for the survival of many creatures. There are forests everywhere on
+            the globe, and there are a variety of plants and animals that form
+            an ecosystem.
+          </p>
+          <p>
+            Rainfall and temperature are the two factors that most affect
+            forests. Woods can be found from the equator to the polar regions.
+            However, the types of forests differ according to climate. Conifers
+            flourish in cold regions, although flowering plants make up most of
+            the forests in temperate and tropical zones. Different rainfall also
+            creates different types of forests. That’s why deserts lack forests.
+            The only trees found there are a few spread all over areas where
+            their roots may reach the water below.
+          </p>
+        </div>
+
+        <section class="space-y-4 pt-4 border-t border-[#1A2CA3]/30">
+          <h2
+            class="text-xl font-bold text-white tracking-tight flex items-center gap-2"
+          >
+            <i class="fa-solid fa-layer-group text-[#F68048] text-sm"></i>
+            Different Types of Forests
+          </h2>
+          <p class="text-slate-400 text-sm">
+            Forests can be divided into 5 main categories, depending on the
+            types of trees found in them:
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+            <div
+              class="bg-[#1A2CA3]/20 border border-[#1A2CA3]/40 p-4 rounded-xl"
+            >
+              <h3 class="font-bold text-[#F68048] mb-1">Coniferous Forests</h3>
+              <p class="text-slate-300 text-xs leading-relaxed">
+                Mostly made up of trees that bear cones, like spruce, pine, fir,
+                and hemlock. Found in northern parts of Asia, Europe, and North
+                America.
+              </p>
+            </div>
+            <div
+              class="bg-[#1A2CA3]/20 border border-[#1A2CA3]/40 p-4 rounded-xl"
+            >
+              <h3 class="font-bold text-[#F68048] mb-1">Deciduous Forest</h3>
+              <p class="text-slate-300 text-xs leading-relaxed">
+                Broadleaved trees that shed their leaves between late summer to
+                early autumn turning yellow, red, and orange. Located in
+                seasonal climates.
+              </p>
+            </div>
+            <div
+              class="bg-[#1A2CA3]/20 border border-[#1A2CA3]/40 p-4 rounded-xl"
+            >
+              <h3 class="font-bold text-[#F68048] mb-1">Mixed Forests</h3>
+              <p class="text-slate-300 text-xs leading-relaxed">
+                Both coniferous and deciduous tree species mix together. Mostly
+                found across global hilly regions.
+              </p>
+            </div>
+            <div
+              class="bg-[#1A2CA3]/20 border border-[#1A2CA3]/40 p-4 rounded-xl"
+            >
+              <h3 class="font-bold text-[#F68048] mb-1">
+                Mediterranean Forests
+              </h3>
+              <p class="text-slate-300 text-xs leading-relaxed font-sans">
+                Also known as scrublands or “maquis”. Perfect temperature for
+                short oaks, pines, wildflowers, and insect-eating birds.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-[#1A2CA3]/20 border border-[#1A2CA3]/40 p-4 rounded-xl text-sm"
+          >
+            <h3 class="font-bold text-[#F68048] mb-1">Tropical Rainforest</h3>
+            <p class="text-slate-300 text-xs leading-relaxed">
+              Found in hot climates with year-round precipitation. Home to an
+              immense variety of insects, bright birds, and animal species.
+            </p>
+          </div>
+        </section>
+
+        <section
+          class="bg-[#2845D6]/10 border border-[#2845D6]/30 p-5 rounded-xl space-y-3"
+        >
+          <h2 class="text-lg font-bold text-white flex items-center gap-2">
+            <i class="fa-solid fa-clock-rotate-left text-[#F68048]"></i>
+            Historical Carbonization Note
+          </h2>
+          <div
+            class="text-xs md:text-sm text-slate-300 space-y-2 leading-relaxed"
+          >
+            <p>
+              There was a time in the planet's past where nothing existed that
+              could break down wood. Early trees that fell or died would lay
+              around covering the ground and never rotting away.
+            </p>
+            <p>
+              As time passed, they got covered with layers and layers of
+              sediment, compressed, and eventually turned into coal. This
+              specific ecological pocket is why coal and other fossil fuels are
+              a completely finite resource—the modern conditions no longer exist
+              for dead wood to transform into coal ever again.
+            </p>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer
+      class="w-full bg-[#0D1A63]/90 border-t border-[#1A2CA3]/40 backdrop-blur-md py-6 mt-auto"
+    >
+      <div
+        class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs md:text-sm text-slate-400"
+      >
+        <div class="flex items-center space-x-2">
+          <span class="font-semibold text-white tracking-wide">Forests</span>
+          <span>&copy; 2026. All rights reserved.</span>
+        </div>
+
+        <div>
+          <a
+            href="#"
+            class="text-slate-400 hover:text-[#F68048] transition-colors duration-200 font-medium flex items-center gap-1"
+          >
+            Back to top <i class="fa-solid fa-arrow-up text-[10px]"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/homepage.js"></script>
+  </body>
+</html>

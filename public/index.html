@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Loading CorePortal...</title>
+    <script>
+      // Check if the user already has an active wristband token
+      const token = localStorage.getItem("sessionToken");
+
+      if (token) {
+        // Logged in? Skip the gate and go to dashboard
+        window.location.href = "/homepage";
+      } else {
+        // Stranger? Go to the login screen
+        window.location.href = "/login";
+      }
+    </script>
+  </head>
+  <body style="background-color: #0d1a63"></body>
+</html>
