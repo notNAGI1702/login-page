@@ -3,10 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
     <link rel="stylesheet" href="/css/style.css" />
     <title>ArborPortal - Forest Ecology</title>
   </head>
@@ -32,7 +28,14 @@
               this.nextElementSibling.style.display = 'block';
             "
           />
-          <i class="fa-solid fa-tree text-white text-sm hidden"></i>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 text-white hidden"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 2L6 9h4l-3 5h5v6h2v-6h5l-3-5h4z" />
+          </svg>
         </div>
         <span class="font-bold text-lg tracking-wide text-white">
           Forests
@@ -49,9 +52,14 @@
 
       <div class="flex items-center space-x-4">
         <div class="relative hidden sm:flex items-center">
-          <i
-            class="fa-solid fa-magnifying-glass absolute left-3.5 text-slate-400 text-xs"
-          ></i>
+          <span class="absolute left-3.5 flex items-center pointer-events-none">
+            <img
+              src="/assets/Search Icon.svg"
+              alt=""
+              class="h-3.5 w-3.5 object-contain flex-shrink-0"
+              style="width: 14px; height: 14px; filter: brightness(0) invert(1)"
+            />
+          </span>
           <input
             type="text"
             placeholder="Search ecosystem data..."
@@ -61,9 +69,19 @@
 
         <button
           id="logout-btn"
-          class="bg-red-500/10 hover:bg-red-500 border border-red-500/20 text-red-400 hover:text-white text-sm font-medium px-4 py-2 rounded-xl transition-all duration-200 active:scale-95"
+          class="bg-red-500/10 hover:bg-red-500 border border-red-500/20 text-red-400 hover:text-white text-sm font-medium px-4 py-2 rounded-xl transition-all duration-200 active:scale-95 flex items-center gap-2"
         >
-          <i class="fa-solid fa-arrow-right-from-bracket mr-2"></i>Log Out
+          <img
+            src="/assets/Logout Icon.svg"
+            alt=""
+            class="object-contain flex-shrink-0"
+            style="
+              width: 16px;
+              height: 16px;
+              filter: invert(40%) sepia(80%) saturate(400%) hue-rotate(314deg);
+            "
+          />
+          Log Out
         </button>
       </div>
     </nav>
@@ -98,7 +116,7 @@
             However, the types of forests differ according to climate. Conifers
             flourish in cold regions, although flowering plants make up most of
             the forests in temperate and tropical zones. Different rainfall also
-            creates different types of forests. That’s why deserts lack forests.
+            creates different types of forests. That's why deserts lack forests.
             The only trees found there are a few spread all over areas where
             their roots may reach the water below.
           </p>
@@ -108,7 +126,16 @@
           <h2
             class="text-xl font-bold text-white tracking-tight flex items-center gap-2"
           >
-            <i class="fa-solid fa-layer-group text-[#F68048] text-sm"></i>
+            <img
+              src="/assets/Layers SVG Icon.svg"
+              alt=""
+              class="object-contain flex-shrink-0"
+              style="
+                width: 16px;
+                height: 16px;
+                filter: invert(58%) sepia(76%) saturate(500%) hue-rotate(340deg);
+              "
+            />
             Different Types of Forests
           </h2>
           <p class="text-slate-400 text-sm">
@@ -153,7 +180,7 @@
                 Mediterranean Forests
               </h3>
               <p class="text-slate-300 text-xs leading-relaxed font-sans">
-                Also known as scrublands or “maquis”. Perfect temperature for
+                Also known as scrublands or "maquis". Perfect temperature for
                 short oaks, pines, wildflowers, and insect-eating birds.
               </p>
             </div>
@@ -174,7 +201,16 @@
           class="bg-[#2845D6]/10 border border-[#2845D6]/30 p-5 rounded-xl space-y-3"
         >
           <h2 class="text-lg font-bold text-white flex items-center gap-2">
-            <i class="fa-solid fa-clock-rotate-left text-[#F68048]"></i>
+            <img
+              src="/assets/Time SVG Icon.svg"
+              alt=""
+              class="object-contain flex-shrink-0"
+              style="
+                width: 16px;
+                height: 16px;
+                filter: invert(58%) sepia(76%) saturate(500%) hue-rotate(340deg);
+              "
+            />
             Historical Carbonization Note
           </h2>
           <div
@@ -196,6 +232,7 @@
         </section>
       </article>
     </main>
+
     <footer
       class="w-full bg-[#0D1A63]/90 border-t border-[#1A2CA3]/40 backdrop-blur-md py-6 mt-auto"
     >
@@ -212,11 +249,26 @@
             href="#"
             class="text-slate-400 hover:text-[#F68048] transition-colors duration-200 font-medium flex items-center gap-1"
           >
-            Back to top <i class="fa-solid fa-arrow-up text-[10px]"></i>
+            Back to top
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-2.5 w-2.5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5 15l7-7 7 7"
+              />
+            </svg>
           </a>
         </div>
       </div>
     </footer>
+
     <script src="/js/homepage.js"></script>
   </body>
 </html>
